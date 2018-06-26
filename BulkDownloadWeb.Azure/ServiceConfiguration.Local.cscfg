@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="BulkDownloadWeb.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="BulkDownloadWeb">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Ctxcldwrs001SSL" thumbprint="B9ED41FD395B8EA8E4A5F4166D02A3D1619585BC" thumbprintAlgorithm="sha1" />
+      <Certificate name="Ctxaurpenc" thumbprint="[[ctxaurpenc.accesscontrol.windows.net thumbprint]]" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

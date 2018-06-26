@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="baa2e01c-85ca-4337-8499-6964aa09e943.DownloadAsZip"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Downloading is in progress, Please wait.."
+                HostWebDialog="true"
+                HostWebDialogHeight="300"
+                HostWebDialogWidth="500">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Copies.Controls._children">
+          <Button Id="Ribbon.Documents.Copies.DownloadasZipButton"
+                  Alt="Download as Zip"
+                  Sequence="100"
+                  Command="Invoke_DownloadasZipButtonRequest"
+                  LabelText="Download as Zip"
+                  TemplateAlias="o1"
+                  Image32by32="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABJ0AAASdAHeZh94AAAAB3RJTUUH3QwbBiIGasAHaQAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAC9ElEQVRYhd2WS0hUYRTHf/fOONMwjo/GJnPGMDMqskIkyIUWLYo2hVBEix4LK4ikCIwWtY8osBZBtAmJHosgzAiCikTalEXK+Ohh2jhWo85MOeO852uTN29jo1PeBP+78/E/3/9/z3cO90hCCMEcQp5L8fljQAhBvzfMoD/MxIv6Q3GcX4KEYom0ufpMxSLxJI/f+hjwhSnKMVJZnM3Bm708fucHoHatlbICE5da3UQTgnyTnsba5ezfUDjlfVK6JnT5wtxo9+DyR1hlM1FqXcCxu+8Z8EUUjk6CxDRtLEvw5Oh6NpXlzdzAA+coe5q6CEaT6W+fIey5Buqr7TRsKUaWpPQGPvnCrDn3gsAsiU/G5drl1Nc4lHjKJrzS5tZEHOD2a48qVjWhEIKXrjEedvs0EQfQyZIqVhk43dLH+SeDmokDfA8nEEIg/ewD5QlC0QSNz9yaigO8GQrSMRRUYsVAUgiS/+m3MByMphowG/UcrlqiubhOhvJCc6oBgOM1Dkx6bX8PJ2rsFOYYlVjVhBefugjFZ2f8Tm624xmLKfFKmwlbtoG6jeoqqwx8HosyW/AEYtxo/zXz9dV2zmwtSeGp6r199cJZMzBTqCpwpKqIkUCM+04vhZYsWrq8ZDoXFXYzw4HY9MSpDMiyxNltJZzdVoIQgnudIzQ09/FhNKxwFmdnEU8KRsfjKZdZzXqa69ZizzVw4ekg4EnhpDUwGZIkUbtuETvKC+gYCuDyRygwZ1FZbKHn6zh7m7rp9owr/JU2E7f2rcaRZ/yZP/3XpzUwAZ0sUeGwUOGwKGfr7dl0nKqk7eM3+r0RluYbqS7NJUuX+QhnvBEpiTqZzWX5f5uuYH4spZPhGYty6E4vt16pG/BRr5cDN3v4MBLS1oDNYmBnuRXnl6Dq/N1wiOplOZRaF6jO0y6l/4IW5yi7rjuJxAWyBFd3r6CuqiiVKDTE/c5hYWpoFdeeu//I0awCE3D7IxTlGpQN6HdobmA6zL8xzBQ/AL0chqEKOXwRAAAAAElFTkSuQmCC"
+                  Image16by16="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAABJ0AAASdAHeZh94AAAAB3RJTUUH3QwbBiIafsFbJgAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAABd0lEQVQ4jaVSPUhCYRQ9z57mT4YERtFDKIJ+iEAaGhpqyanm1paGloqmpsYa2lwagohoCpoCh1xEIhCkP6iEEik0zRB/Ut/Tp+82vHzPLHpKZ/n4Lvec7577HYaICP+ATquBiJDlK8pZlb6/x9ZfBFHCeSQLu0WPw2ACkZSAUkWC5yENZ58F17ECxnrM8K84YTPJVKZmQRAlTLmvcBnNa4493G2Cd3kcnM0oWyAiHAUTTZEBIJTkcRZKqzvYD8SxdPzYFLmGl4ygClSk1j8i+SEC+FripKMTOgbQ0pngOiBWCb2dBqzPcOoEb/myJhkARIlwGy9gdZrDoN2sCriGunCyOIpNlwNGVo6GWa9GhNUx2Jnvh8XQ9lOVGpDjRQq/FynLi7RxGqaFgzvyhlJERDS7e0NY85HnPqX0s42CViMLq1Eub88NaNrSjHINvqc0As85AIDbH0WxXP3dwl/Yu4jRyFaAXjOCUlOi3CxKooT2ugW3LNCIT1m/8ad4G9H6AAAAAElFTkSuQmCC" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_DownloadasZipButtonRequest"
+                          CommandAction="https://ctx-bulkdownload.azurewebsites.net/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={ItemId}&amp;SPListId={ListId}&amp;ListURLDir={ListUrlDir}&amp;SelectedItemID={SelectedItemId}"
+                          EnabledScript="javascript: var EnableDisable = function() {
+                                                                    this.clientContext = SP.ClientContext.get_current();
+                                                                    this.selectedItems = SP.ListOperation.Selection.getSelectedItems(this.clientContext);
+                                                                    var ci = CountDictionary(selectedItems);
+                                                                    return (ci > 0);
+                                                                    };
+                                                                    EnableDisable();"/>
+
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>
